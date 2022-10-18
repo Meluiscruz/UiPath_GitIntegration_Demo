@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="528,2056" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="528,2161.3333333333335" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="58">
       <x:String>System.Activities</x:String>
@@ -90,13 +90,13 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="538,1991.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="538,2096.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="1.  Display a form, and ask for a text.&#xA;2. Open Notepad application.&#xA;3. Write the text on the Notepad.&#xA;4. Save the file.&#xA;5. Exit." DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="496,1901.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="1.  Display a form, and ask for a text.&#xA;2. Open Notepad application.&#xA;3. Write the text on the Notepad.&#xA;4. Save the file.&#xA;5. Exit." DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="496,2006.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="strInputText" />
       </Sequence.Variables>
@@ -111,13 +111,13 @@
           <OutArgument x:TypeArguments="x:String">[strInputText]</OutArgument>
         </ui:InputDialog.Result>
       </ui:InputDialog>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Notepad application." sap:VirtualizedContainerService.HintSize="434,1389.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="6423eca9-ca99-4bcc-9a43-292d2ca20979" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Notepad application." sap:VirtualizedContainerService.HintSize="434,1494.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="6423eca9-ca99-4bcc-9a43-292d2ca20979" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1083.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1188.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -162,6 +162,7 @@
                   </uix:TargetAnchorable>
                 </uix:NKeyboardShortcuts.Target>
               </uix:NKeyboardShortcuts>
+              <ui:Comment sap:VirtualizedContainerService.HintSize="358,65.33333333333333" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Nuevo comentario inecesario&#xD;&#xA;" />
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>
